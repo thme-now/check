@@ -1,25 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-		"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-	<title>index.html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Validierung</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="color: rgb(20, 20, 20); background-color: rgb(247, 247, 247)">
-<pre><code>
-<span style="color: rgb(208, 35, 37);">&lt;!DOCTYPE&nbsp;html&gt;</span><span style="color: rgb(20, 20, 20);">
-</span><span style="color: rgb(56, 79, 244);">&lt;html</span><span style="color: rgb(187, 95, 11);">&nbsp;lang</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"de"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(20, 20, 20);">
-</span><span style="color: rgb(56, 79, 244);">&lt;head</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;meta</span><span style="color: rgb(187, 95, 11);">&nbsp;charset</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"UTF-8"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;meta</span><span style="color: rgb(187, 95, 11);">&nbsp;name</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"viewport"</span><span style="color: rgb(187, 95, 11);">&nbsp;content</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"width=device-width,&nbsp;initial-scale=1.0"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;title</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(20, 20, 20);">QR-Code&nbsp;Validierung</span><span style="color: rgb(56, 79, 244);">&lt;/title&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;script</span><span style="color: rgb(187, 95, 11);">&nbsp;crossorigin</span><span style="color: rgb(187, 95, 11);">&nbsp;src</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"https://unpkg.com/react@18/umd/react.production.min.js"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(56, 79, 244);">&lt;/script&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;script</span><span style="color: rgb(187, 95, 11);">&nbsp;crossorigin</span><span style="color: rgb(187, 95, 11);">&nbsp;src</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(56, 79, 244);">&lt;/script&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;script</span><span style="color: rgb(187, 95, 11);">&nbsp;src</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(56, 79, 244);">&lt;/script&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;script</span><span style="color: rgb(187, 95, 11);">&nbsp;src</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"https://cdn.tailwindcss.com"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(56, 79, 244);">&lt;/script&gt;</span><span style="color: rgb(20, 20, 20);">
-</span><span style="color: rgb(56, 79, 244);">&lt;/head&gt;</span><span style="color: rgb(20, 20, 20);">
-</span><span style="color: rgb(56, 79, 244);">&lt;body</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;div</span><span style="color: rgb(187, 95, 11);">&nbsp;id</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"root"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(56, 79, 244);">&lt;/div&gt;</span><span style="color: rgb(20, 20, 20);">
-&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(56, 79, 244);">&lt;script</span><span style="color: rgb(187, 95, 11);">&nbsp;type</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"text/babel"</span><span style="color: rgb(187, 95, 11);">&nbsp;src</span><span style="color: rgb(187, 95, 11);">=</span><span style="color: rgb(200, 58, 130);">"app.js"</span><span style="color: rgb(56, 79, 244);">&gt;</span><span style="color: rgb(56, 79, 244);">&lt;/script&gt;</span><span style="color: rgb(20, 20, 20);">
-</span><span style="color: rgb(56, 79, 244);">&lt;/body&gt;</span><span style="color: rgb(20, 20, 20);">
-</span><span style="color: rgb(56, 79, 244);">&lt;/html&gt;</span></code></pre></body>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="app.js"></script>
+</body>
 </html>
