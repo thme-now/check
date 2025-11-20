@@ -9,7 +9,7 @@ export default function QRValidator() {
   const [error, setError] = useState(null);
 
   // WICHTIG: Passen Sie diese URL an Ihr GitHub Repository an
-  const CSV_URL = 'https://raw.githubusercontent.com/thme-now/qr-code-validator/main/nummern.csv';
+  const CSV_URL = 'https://raw.githubusercontent.com/thme-now/qr-code-validator/main/codes.csv';
 
   // CSV von GitHub laden
   useEffect(() => {
