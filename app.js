@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ckimport React, { useState, useEffect } from 'react';
 import { CheckCircle, XCircle, Search, Loader, AlertCircle } from 'lucide-react';
 
 export default function QRValidator() {
@@ -9,7 +9,7 @@ export default function QRValidator() {
   const [error, setError] = useState(null);
 
   // WICHTIG: Passen Sie diese URL an Ihr GitHub Repository an
-  const CSV_URL = 'https://raw.githubusercontent.com/thme-now/qr-code-validator/main/codes.csv';
+  const CSV_URL = 'https://raw.githubusercontent.com/thme-now/check/main/codes.csv';
 
   // CSV von GitHub laden
   useEffect(() => {
